@@ -1,5 +1,7 @@
 defmodule Hangman do
-  def hello do
-    IO.puts Dictionary.random_word()
+  alias Hangman.Game
+
+  def new_game() do
+    Game.new_game()
   end
 end
