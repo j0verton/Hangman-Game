@@ -8,7 +8,7 @@ defmodule HangmanTest do
 
 
   test "the truth" do
-    assert 1+1 == 2
+    assert [1,2,3] == [2,2,3]
     
   end
 
