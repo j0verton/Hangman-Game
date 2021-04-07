@@ -16,5 +16,11 @@ test "new_game returns structure" do
 
 end
 
+test "state isn't changed for :won game"
+game = Game.new_game()
+  |> Map.put(:game_state, :won)
+assert {^game, _} = Game.make_move(game, "x")
+
+
 
 end
